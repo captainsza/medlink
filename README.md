@@ -80,5 +80,5 @@ To set up MedLink locally, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/MedLink.git
+   git clone https://github.com/captainsza/medlink
    cd MedLink
