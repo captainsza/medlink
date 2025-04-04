@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/captainsza/medlink/main/public/medlink-logo.png" alt="MedLink Logo" width="180" height="180" style="border-radius: 20px;" />
+  <img src="https://raw.githubusercontent.com/captainsza/medlink/main/public/logo.png" alt="MedLink Logo" width="180" height="180" style="border-radius: 20px;" />
   
   # MedLink
   
