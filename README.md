@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MedLink - AI-Powered Hospital Network Management System
 
-## Getting Started
+MedLink is an innovative AI-powered hospital network management system designed to revolutionize healthcare delivery. By connecting hospitals and streamlining resource management, MedLink aims to improve patient care, optimize resource allocation, and support underserved communities through centralized data management and AI assistance.
 
-First, run the development server:
+## Table of Contents
+- [Overview](#overview)
+- [Problem Statement](#problem-statement)
+- [Solution Overview](#solution-overview)
+- [Key Features](#key-features)
+- [Architecture](#architecture)
+- [Technology Stack](#technology-stack)
+- [Project Process](#project-process)
+- [Installation and Setup](#installation-and-setup)
+- [Contributing](#contributing)
+- [Team](#team)
+- [References](#references)
+- [License](#license)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Overview
+MedLink tackles pressing healthcare challenges such as inadequate doctor-patient ratios, delayed diagnoses, and limited access to healthcare schemes. The platform connects hospitals through a network that facilitates:
+- Centralized patient data management
+- Real-time resource tracking
+- AI-powered data retrieval and diagnostics
+- Enhanced support for maternal and child health in rural areas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Problem Statement
+Healthcare systems are burdened by:
+- **Resource Constraints:** Severe shortages in medical staff and equipment, especially in rural areas.
+- **Delayed Diagnoses:** Inefficient data access contributes to critical delays in patient care.
+- **Low Scheme Awareness:** Limited enrollment in healthcare insurance and government schemes due to complex processes.
+- **Maternal and Child Health Challenges:** Under-nutrition and delayed identification of high-risk pregnancies affecting vulnerable populations.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Solution Overview
+MedLink provides a holistic approach by integrating:
+- **Universal Patient Database:** A secure, centralized repository of patient records.
+- **AI-Powered Chatbot:** Immediate, accurate data retrieval and decision support powered by models like Llama 3.
+- **Resource Management:** Real-time tracking and updates of hospital resources to optimize capacity.
+- **Inter-Hospital Collaboration:** Automated alerts and notifications to enable resource sharing during shortages.
+- **Dedicated Maternal/Child Health Module:** Special features to assist frontline workers (e.g., ASHA) in high-risk pregnancy detection, dietary advice, and scheme mapping.
+- **Offline Capabilities:** Local caching to ensure functionality in areas with limited connectivity.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Key Features
+- **Resource Management:** Monitor hospital assets (beds, equipment, ventilators) in real time.
+- **Universal Patient Database:** Secure storage and easy access to patient histories.
+- **AI Chatbot:** Rapid query resolution to support doctors in diagnostic and treatment processes.
+- **Inter-Hospital Alerts:** Automated notifications for resource sharing during emergencies.
+- **Maternal/Child Health Module:** Targeted support for frontline workers to improve maternal and child health outcomes.
+- **Scheme Mapping:** Automated eligibility checks and enrollment support for healthcare schemes.
+- **Offline Access:** Ensures continuous functionality in low-connectivity environments.
 
-## Learn More
+## Architecture
+MedLink utilizes a microservices architecture to ensure scalability and flexibility:
+- **Resource Service:** Tracks hospital resources and updates availability in real time.
+- **Patient Data Service:** Manages secure access to patient records.
+- **AI Service:** Powers the chatbot and diagnostic features using open-source AI models.
+- **Collaboration Service:** Facilitates inter-hospital resource sharing with real-time alerts.
+- **Maternal/Child Service:** Provides specialized analytics and guidance for maternal and child health.
+- **Scheme Service:** Automates the mapping of patient profiles to appropriate healthcare schemes.
 
-To learn more about Next.js, take a look at the following resources:
+Services communicate via RESTful APIs. The front-end is built using Next.js/Typescript, while the back-end leverages Python for analytics and machine learning tasks. Cloud deployment and offline support are integrated to ensure the system is robust and adaptable to various environments.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technology Stack
+- **Front-End:** Next.js, Typescript
+- **Back-End:** Python (Analytics, Machine Learning)
+- **Database:** MongoDB with Prisma ORM
+- **AI Models:** Llama 3 (with potential alternatives like Gemini)
+- **Architecture:** Microservices communicating via RESTful APIs
+- **Data Sources:** Public datasets (e.g., MIMIC-III), PubMed, and synthetic data for testing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Process
+MedLink was conceptualized for the Pragati AI for Impact Hackathon 2025 by Team **QUBITRULES** (Team Leader: Zaid Ahmad). The initial project process involves:
+1. **Idea Submission & Validation:** Aligning the project with hackathon themes and defining clear objectives.
+2. **System Design & Architecture:** Establishing a scalable microservices framework and defining key roles (Super Admin, Hospital Admin, Doctors, etc.).
+3. **Prototype Development:** Building core components such as the universal patient database and AI-powered chatbot.
+4. **Testing & Feedback:** Validating functionalities with public datasets (MIMIC-III) and synthetic data.
+5. **Iterative Enhancements:** Expanding features based on pilot testing—such as the maternal/child health module and offline capabilities.
 
-## Deploy on Vercel
+## Installation and Setup
+To set up MedLink locally, follow these steps:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/MedLink.git
+   cd MedLink
